@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Powered Internal Audit Efficiency Questionnaire</title>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+color: #333;
+max-width: 900px;
+margin: 0 auto;
+padding: 20px;
+background-color: #f9f9f9;
+}
+h1 {
+color: #2c3e50;
+border-bottom: 2px solid #3498db;
+padding-bottom: 10px;
+}
+h2 {
+color: #2980b9;
+margin-top: 30px;
+}
+.section {
+background-color: white;
+padding: 20px;
+margin-bottom: 25px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.question {
+margin-bottom: 20px;
+}
+.question-text {
+font-weight: bold;
+margin-bottom: 8px;
+}
+.example {
+font-style: italic;
+color: #7f8c8d;
+margin: 5px 0 10px 20px;
+}
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+min-height: 60px;
+font-family: inherit;
+}
+input[type="text"] {
+width: 100%;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 15px 0;
+}
+th, td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
+.checkbox-group {
+margin: 10px 0;
+}
+.checkbox-item {
+margin: 5px 0;
+}
+button {
+background-color: #3498db;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 20px;
+}
+button:hover {
+background-color: #2980b9;
+}
+.notes {
+font-size: 0.9em;
+color: #7f8c8d;
+margin-top: 30px;
+padding: 15px;
+background-color: #f2f2f2;
+border-radius: 4px;
+}
+.hidden-id {
+display: none;
+}
+</style>
+</head>
+<body>
+<h1>AI-Powered Internal Audit Efficiency: Brainstorming Questionnaire</h1>
+<p><strong>Objective:</strong> Explore practical AI use cases to drive breakthrough efficiency gains</p >
+
+<div class="section">
+<h2>I. Pain Point Identification</h2>
+
+<div class="question">
+<div class="question-text">1. Top 3 most time-consuming/repetitive tasks in your audit work:</div>
+<div class="example">(e.g., data cleansing, sample selection, report drafting, workpaper organization)</div>
+<textarea id="q1" name="q1"></textarea>
+</div>
+
+<div class="question">
+<div class="question-text">2. In which scenarios might manual judgment miss risks or introduce errors?</div>
+<div class="example">(e.g., high-value transaction screening, cross-system data reconciliation, compliance clause tracing)</div>
+<textarea id="q2" name="q2"></textarea>
+</div>
+</div>
+
+<div class="section">
+<h2>II. AI Application Brainstorming (Think freely!)</h2>
+
+<div class="question">
+<div class="question-text">3. If AI could be your "smart assistant", what tasks would you want it to automate?</div>
+<div class="example">(Example: Auto-flagging abnormal clauses in 1,000 contracts; Real-time procurement payment risk monitoring)</div>
+<textarea id="q3" name="q3"></textarea>
+</div>
+
+<div class="question">
+<div class="question-text">4. How could AI transform these audit stages?</div>
+<table>
+<tr>
+<th>Stage</th>
+<th>Breakthrough Changes AI Could Bring</th>
+</tr>
+<tr>
+<td>Risk Identification</td>
+<td><textarea id="q4-risk" name="q4-risk" style="min-height: 40px;"></textarea></td>
+</tr>
+<tr>
+<td>Evidence Collection</td>
+<td><textarea id="q4-evidence" name="q4-evidence" style="min-height: 40px;"></textarea></td>
+</tr>
+<tr>
+<td>Data Analysis</td>
+<td><textarea id="q4-analysis" name="q4-analysis" style="min-height: 40px;"></textarea></td>
+</tr>
+<tr>
+<td>Report Generation</td>
+<td><textarea id="q4-report" name="q4-report" style="min-height: 40px;"></textarea></td>
+</tr>
+<tr>
+<td>Issue Tracking</td>
+<td><textarea id="q4-tracking" name="q4-tracking" style="min-height: 40px;"></textarea></td>
+</tr>
+</table>
+<div class="example">Example: Risk Identification → "AI predicts high-risk suppliers dynamically"</div>
+</div>
+
+<div class="question">
+<div class="question-text">5. Your visionary "futuristic" AI audit tools (blue-sky ideas welcome):</div>
+<div class="example">
+Examples:<br>
+- "Describe audit objectives → AI auto-generates full audit program"<br>
+- "Upload voucher photos → AI detects forgery patterns"<br>
+- "Conversational AI answering audit standards queries in real-time"
+</div>
+<textarea id="q5" name="q5"></textarea>
+</div>
+</div>
+
+<div class="section">
+<h2>III. Scenario-Based Needs</h2>
+
+<div class="question">
+<div class="question-text">6. In your audit specialty (e.g., Finance/IT/Compliance):</div>
+<div>
+<strong>Audit Scenario:</strong> <input type="text" id="q6-scenario" name="q6-scenario"><br><br>
+<strong>Current Pain Point:</strong> <input type="text" id="q6-pain" name="q6-pain"><br><br>
+<strong>Desired AI Solution:</strong> <input type="text" id="q6-solution" name="q6-solution">
+</div>
+<div class="example">Example: Scenario - Vendor fraud audit｜Pain Point - Fake invoice detection｜Solution - AI cross-checks invoices/contracts/shipping records</div>
+</div>
+</div>
+
+<div class="section">
+<h2>IV. Key Considerations</h2>
+
+<div class="question">
+<div class="question-text">7. Top 3 essential features for AI implementation:</div>
+<div class="checkbox-group">
+<div class="checkbox-item">
+<input type="checkbox" id="feature1" name="features" value="User-friendliness">
+<label for="feature1">User-friendliness</label>
+</div>
+<div class="checkbox-item">
+<input type="checkbox" id="feature2" name="features" value="Explainable outputs">
+<label for="feature2">Explainable outputs</label>
+</div>
+<div class="checkbox-item">
+<input type="checkbox" id="feature3" name="features" value="Data security">
+<label for="feature3">Data security</label>
+</div>
+<div class="checkbox-item">
+<input type="checkbox" id="feature4" name="features" value="System compatibility">
+<label for="feature4">System compatibility</label>
+</div>
+<div class="checkbox-item">
+<input type="checkbox" id="feature5" name="features" value="Cost-effectiveness">
+<label for="feature5">Cost-effectiveness</label>
+</div>
+<div class="checkbox-item">
+<input type="checkbox" id="feature6" name="features" value="Real-time responsiveness">
+<label for="feature6">Real-time responsiveness</label>
+</div>
+<div class="checkbox-item">
+<input type="checkbox" id="feature7" name="features" value="Other">
+<label for="feature7">Other: <input type="text" id="feature-other" style="width: 200px; display: inline;"></label>
+</div>
+</div>
+</div>
+
+<div class="question">
+<div class="question-text">8. Potential concerns/challenges:</div>
+<textarea id="q8" name="q8"></textarea>
+</div>
+</div>
+
+<div class="section">
+<h2>V. Open Suggestions</h2>
+
+<div class="question">
+<div class="question-text">9. Other disruptive ideas/reference cases (e.g., AI audit practices at peer organizations):</div>
+<textarea id="q9" name="q9"></textarea>
+</div>
+</div>
+
+<!-- Hidden unique identifier for anonymous tracking -->
+<div class="hidden-id">
+<input type="hidden" id="respondent-id" name="respondent-id">
+</div>
+
+<button id="submit-btn">Submit Questionnaire</button>
+
+<div class="notes">
+<strong>Submission Notes</strong><br>
+- Anonymous collection - Top ideas will shape AI audit pilot projects<br>
+- Let's co-create the next generation of smart auditing!
+</div>
+
+<script>
+// Generate a unique anonymous ID for the respondent
+document.getElementById('respondent-id').value = 'anon-' + Math.random().toString(36).substr(2, 9);
+
+// Form submission handler
+document.getElementById('submit-btn').addEventListener('click', function() {
+// Collect all form data
+const formData = {
+respondentId: document.getElementById('respondent-id').value,
+q1: document.getElementById('q1').value,
+q2: document.getElementById('q2').value,
+q3: document.getElementById('q3').value,
+q4: {
+risk: document.getElementById('q4-risk').value,
+evidence: document.getElementById('q4-evidence').value,
+analysis: document.getElementById('q4-analysis').value,
+report: document.getElementById('q4-report').value,
+tracking: document.getElementById('q4-tracking').value
+},
+q5: document.getElementById('q5').value,
+q6: {
+scenario: document.getElementById('q6-scenario').value,
+pain: document.getElementById('q6-pain').value,
+solution: document.getElementById('q6-solution').value
+},
+q7: {
+features: Array.from(document.querySelectorAll('input[name="features"]:checked')).map(el => el.value),
+other: document.getElementById('feature-other').value
+},
+q8: document.getElementById('q8').value,
+q9: document.getElementById('q9').value
+};
+
+// Here you would typically send the data to a server
+// For this example, we'll just log it to the console
+console.log('Form data:', formData);
+
+// Show confirmation to user
+alert('Thank you for your submission! Your responses have been recorded anonymously.');
+
+// Clear form (optional)
+document.querySelector('form').reset();
+});
+</script>
+</body>
+</html>
